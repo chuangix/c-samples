@@ -1,3 +1,6 @@
+#include <float.h>
+#include <limits.h>
+#include <stdbool.h>
 #include <stdint.h>
 #include <stdio.h>
 
@@ -18,7 +21,54 @@ int main() {
   return 0;
 }
 
-void showBuiltIn() {}
+void showBuiltIn() {
+  char c;
+  int8_t i8;
+  int16_t i16;
+  int32_t i32;
+  int64_t i64;
+  uint8_t u8;
+  uint16_t u16;
+  uint32_t u32;
+  uint64_t u64;
+  float f;
+  double d;
+  bool b;
+  printf("The size of \"char\":%d", sizeof(c));
+  printf(", min value:%.0.0lf", (double)CHAR_MIN);
+  printf(", max value:%.0lf\n", (double)CHAR_MAX);
+  printf("The size of \"int8_t\":%d", sizeof(i8));
+  printf(", min value:%.0lf", (double)INT8_MIN);
+  printf(", max value:%.0lf\n", (double)INT8_MAX);
+  printf("The size of \"int16_t\":%d", sizeof(i16));
+  printf(", min value:%.0lf", (double)INT16_MIN);
+  printf(", max value:%.0lf\n", (double)INT16_MAX);
+  printf("The size of \"int32_t\":%d", sizeof(i32));
+  printf(", min value:%.0lf", (double)INT32_MIN);
+  printf(", max value:%.0lf\n", (double)INT32_MAX);
+  printf("The size of \"int64_t\":%d", sizeof(i64));
+  printf(", min value:%.0lf", (double)INT64_MIN);
+  printf(", max value:%.0lf\n", (double)INT64_MAX);
+  printf("The size of \"uint8_t\":%d", sizeof(u8));
+  printf(", min value:%.0lf", 0);
+  printf(", max value:%.0lf\n", (double)UINT8_MAX);
+  printf("The size of \"uint16_t\":%d", sizeof(u16));
+  printf(", min value:%.0lf", 0);
+  printf(", max value:%.0lf\n", (double)UINT16_MAX);
+  printf("The size of \"uint32_t\":%d", sizeof(u32));
+  printf(", min value:%.0lf", 0);
+  printf(", max value:%.0lf\n", (double)UINT32_MAX);
+  printf("The size of \"uint64_t\":%d", sizeof(u64));
+  printf(", min value:%.0lf", 0);
+  printf(", max value:%.0lf\n", (double)UINT64_MAX);
+  printf("The size of \"float\":%d", sizeof(f));
+  printf(", min value:%e", (double)FLT_MIN);
+  printf(", max value:%e\n", (double)FLT_MAX);
+  printf("The size of \"double\":%d", sizeof(d));
+  printf(", min value:%e", (double)DBL_MIN);
+  printf(", max value:%e\n", (double)DBL_MAX);
+  printf("The size of \"bool\":%d\n", sizeof(bool));
+}
 
 void showEnum() {}
 
