@@ -70,7 +70,23 @@ void showBuiltIn() {
   printf("The size of \"bool\":%d\n", sizeof(bool));
 }
 
-void showEnum() {}
+void showEnum() {
+  enum E { Red = -3, Green, Blue = 6, White };
+  enum E red = Red;
+  enum E green = Green;
+  enum E blue = Blue;
+  enum E white = White;
+  printf("The content of \"enum\" type \"E\":{\n");
+  printf("\tRed:%d\n", (int32_t)Red);
+  printf("\tGreen:%d\n", (int32_t)Green);
+  printf("\tBlue:%d\n", (int32_t)Blue);
+  printf("\tWhite:%d\n", (int32_t)White);
+  printf("}\n");
+  printf("The value of \"enum\" red:%d\n", (int32_t)red);
+  printf("The value of \"enum\" green:%d\n", (int32_t)green);
+  printf("The value of \"enum\" blue:%d\n", (int32_t)blue);
+  printf("The value of \"enum\" white:%d\n", (int32_t)white);
+}
 
 void showUnion() {}
 
