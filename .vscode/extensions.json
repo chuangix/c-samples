@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "formulahendry.code-runner",
+    "ms-vscode.cpptools-extension-pack",
+    "ms-vscode.cpptools-themes",
+    "ms-vscode.cpptools",
+    "tdennis4496.cmantic",
+    "xaver.clang-format"
+  ]
+}
